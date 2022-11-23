@@ -1,0 +1,51 @@
+
+
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <div class="col-md-6 offset-md-3">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <h1 class="text-center">Login here </h1>
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>username</mat-label>
+                <input matInput  ngModel
+                name="userName"
+                id="userName" placeholder="userName">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="outline"  class="w-100">
+                <mat-label>userPassword</mat-label>
+                <input matInput ngModel
+                name="userPassword"
+                id="userPassword" placeholder="userPassword">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                
+            </mat-form-field>
+            <div class="container text-center">
+            <button  type="submit"  mat-raised-button color="accent">Submit</button>
+        </div>
+            <!--<input type="text"
+            ngModel
+            name="userName"
+            id="userName"
+            placeholder="Enter your username"
+            class="form-control mb-3"
+            >
+
+            <input type="password"
+            ngModel
+            name="userPassword"
+            id="userPassword"
+            placeholder="Enter your password"
+            class="form-control mb-3"
+            >
+
+            <input type="submit"
+            value="Login"
+            class="btn btn-outline-primary form-control rounded-0">-->
+        </form>
+    </div>
+</div>
+</div>
+
+

@@ -1,0 +1,19 @@
+<mat-toolbar color="accent">
+
+  <span>CUSTOMER PORTAL SERVICE</span>
+
+  <span class="example-spacer"></span>
+  <button   *ngIf="! isLoggedIn()"  routerLink="/register" mat-raised-button color="warn">Register</button>
+  <button *ngIf="! isLoggedIn()" routerLink="/login" mat-raised-button color="primary">lOGIN</button>
+  <button *ngIf="isLoggedIn()" (click)="logout()" mat-raised-button color="warn">LOGOUT</button>
+
+</mat-toolbar>
+<mat-toolbar color="primary" *ngIf="isLoggedIn()">
+
+
+
+
+  <button mat-raised-button color="primary" routerLink="/">Home</button>
+  <button  (click)="isAdmin()"  mat-raised-button color="primary" routerLink="/addproducts">AddProduct</button>
+  
+</mat-toolbar>

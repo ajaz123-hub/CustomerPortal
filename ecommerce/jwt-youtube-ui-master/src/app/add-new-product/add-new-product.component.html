@@ -1,0 +1,55 @@
+
+
+<div class="container mt-5">
+
+  <div class="card p-2">
+      <div class="row">
+          <div class="col-6">
+              <h1 class="text-center">Add Products Here</h1>
+              <form (ngSubmit)="productSubmit()">
+              <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>productName</mat-label>
+                  <input matInput [(ngModel)]="product.productName"
+                  name="productName"
+                  placeholder="productName">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>productDescription</mat-label>
+                  <input matInput [(ngModel)]="product.productDescription"
+                  name="productDescription"
+                  placeholder="productDescription">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>productDiscountPrice</mat-label>
+                  <input matInput [(ngModel)]="product.productDiscountPrice"
+                  name="productDiscountPrice"
+                  placeholder="productDiscountPrice">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="w-100">
+                  <mat-label>productActualPrice</mat-label>
+                  <input matInput [(ngModel)]="product.productActualPrice"
+                  name="productActualPrice"
+                  placeholder="productActualPrice">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Hint</mat-hint>
+              </mat-form-field>
+             
+              <div class="container text-center">
+                  <button  type="submit"  mat-raised-button color="primary">Submit</button>
+                  <button  type="clear"  mat-raised-button color="accent">Clear</button>
+              </div>
+          
+      </form>
+          <div class="col-6">
+              image area
+          </div>
+      
+      </div>
+  </div>
+</div>
